@@ -3,6 +3,7 @@
 <%@ page import="org.apache.log4j.*" %>
 
 <%
+	//테스트 수정
 	try{
 		DBConnectionManager pool = DBConnectionManager.getInstance();
 		Connection con = pool.getConnection("ora8");
