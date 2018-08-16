@@ -5,6 +5,7 @@
 <%
 	//테스트 수정
 	//다시 한번 테스트 수정용
+	//마지막 수정
 	try{
 		DBConnectionManager pool = DBConnectionManager.getInstance();
 		Connection con = pool.getConnection("ora8");
