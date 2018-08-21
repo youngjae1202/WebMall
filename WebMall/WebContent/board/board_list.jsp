@@ -4,7 +4,7 @@
 
 </srcipt>
 <HTML>
-	<HEAD><TITLE>컴퓨터전문쇼핑몰</TITLE>
+	<HEAD><TITLE>쇼핑몰 자유게시판</TITLE>
 	</HEAD>
 	<link href="../common/u3.css" type=text/css rel=stylesheet>
 
@@ -81,11 +81,14 @@
 			b_hit=rs.getInt(7);			// 조회수
 			level=rs.getInt(10);		//글 레벨
 			if(!b_email.equals("")) {
-			mailto="<a href=mailto:"+b_email+">"+b_name+"</a>";
+			
+				mailto="<a href=mailto:"+b_email+">"+b_name+"</a>";
+			
 			} else {
 				mailto=b_name; 
 			}
-            ii--;
+            
+			ii--;
  %>
 		<tr height=22 bgcolor=ffffff onMouseOver=this.style.backgroundColor='#FFF8DE'  onMouseOut=this.style.backgroundColor='#FFFFFF'>
 			<td width=50 align=center><%= ii %></td>
